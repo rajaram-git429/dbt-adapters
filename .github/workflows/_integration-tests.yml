@@ -86,7 +86,7 @@ jobs:
             with:
                 ref: ${{ inputs.branch }}
                 repository: ${{ inputs.repository }}
-        -   uses: actions/setup-python@v5
+        -   uses: actions/setup-python@v6
             with:
                 python-version: ${{ inputs.python-version }}
         -   uses: pypa/hatch@install
@@ -119,7 +119,7 @@ jobs:
             with:
                 ref: ${{ inputs.branch }}
                 repository: ${{ inputs.repository }}
-        -   uses: actions/setup-python@v5
+        -   uses: actions/setup-python@v6
             with:
                 python-version: ${{ inputs.python-version }}
         -   uses: pypa/hatch@install
@@ -151,7 +151,7 @@ jobs:
             with:
                 ref: ${{ inputs.branch }}
                 repository: ${{ inputs.repository }}
-        -   uses: actions/setup-python@v5
+        -   uses: actions/setup-python@v6
             with:
                 python-version: ${{ inputs.python-version }}
         -   uses: pypa/hatch@install
@@ -189,7 +189,7 @@ jobs:
             with:
                 ref: ${{ inputs.branch }}
                 repository: ${{ inputs.repository }}
-        -   uses: actions/setup-python@v5
+        -   uses: actions/setup-python@v6
             with:
                 python-version: ${{ inputs.python-version }}
         -   run: psql -f ./scripts/setup_test_database.sql
@@ -210,7 +210,7 @@ jobs:
                 working-directory: "./dbt-postgres"
         steps:
         -   uses: actions/checkout@v4
-        -   uses: actions/setup-python@v5
+        -   uses: actions/setup-python@v6
             with:
                 python-version: ${{ inputs.python-version }}
         -   if: startsWith(inputs.os, 'macos')
@@ -270,7 +270,7 @@ jobs:
             with:
                 ref: ${{ inputs.branch }}
                 repository: ${{ inputs.repository }}
-        -   uses: actions/setup-python@v5
+        -   uses: actions/setup-python@v6
             with:
                 python-version: ${{ inputs.python-version }}
         -   uses: pypa/hatch@install
@@ -329,7 +329,7 @@ jobs:
             with:
                 ref: ${{ inputs.branch }}
                 repository: ${{ inputs.repository }}
-        -   uses: actions/setup-python@v5
+        -   uses: actions/setup-python@v6
             with:
                 python-version: ${{ inputs.python-version }}
         -   uses: pypa/hatch@install
@@ -379,7 +379,7 @@ jobs:
             with:
                 ref: ${{ inputs.branch }}
                 repository: ${{ inputs.repository }}
-        -   uses: actions/setup-python@v5
+        -   uses: actions/setup-python@v6
             with:
                 python-version: ${{ inputs.python-version }}
         -   uses: pypa/hatch@install
@@ -414,7 +414,7 @@ jobs:
             with:
                 ref: ${{ inputs.branch }}
                 repository: ${{ inputs.repository }}
-        -   uses: actions/setup-python@v5
+        -   uses: actions/setup-python@v6
             with:
                 python-version: ${{ inputs.python-version }}
         -   uses: pypa/hatch@install
